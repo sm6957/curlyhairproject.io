@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ <title> House of Curls </title>
+	
+  <!-- Media query for narrow browser width -->
+<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+<!-- Media query for medium browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+<!-- Media query for full browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+
+<!-- Prevent smartphones from scaling pages down -->
+<meta name="viewport" content="initial-scale=1">
+	
+	
+<style>
+body {
+	background-color: #ffcccc;
+	font-family: Copperplate,serif; 
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffcccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-top: 10px;
+
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+ </head>
+<body>
+	<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="porosity.html">Porosity</a>
+  <a href="hairhacks.html">Hair Hacks</a>
+  <a href="productReview.html">Products</a>
+  <a href="resources.html">Resources</a>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+	<div id = "wrap">
+
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+
+		<div id = "hairTypes">
+			<h1 style="margin-top: 20px;">Understanding Your Hair Type</h1>
+			<img src="understanding_your_hair.jpg">
+
+			<p>Though mostly subjective, it is useful to know which type of natural hair type you have. This is a crucial step in better understanding what hair products to choose and what hair styles work best for you.</p>
+
+			<h2>The Science Behind Your Hair Type</h2>
+			<p>The primary material your body uses to produce hair is a protein kratin. The curliness of ones hair is often times associated with the distribution of keratin on the hair itself. A curly strand of hair will have more keratin on the inner side of the curl in comparison to the outer side. While those with straight hair have keratin more evenly distributed. </p>
+
+			<div id = "follicle">
+				<img src="hair_follicle_structure.jpg">
+			</div>
+
+			<div id = "follicle_info">
+				<p>
+				When looking at each strand of hair, it relies on a follicle to stay anchored in your skin; it is also the source of your hair growth. The shape of your follicles helps determine the curliness, waviness, or straightness of your hair.
+			</p>
+
+			<p>If the bulb-like shape at the base of a follicle is asymmetrical, the hair growing from it will be curlier. If this bulb is round and symmetrical, the hair will grow out straighter. </p>
+				
+
+			</div>
+			
+
+			<h2>Hair Typing System</h2>
+			
+			<img id = "hairTypesImg" src="hair-types.jpg">
+			<div class="hairClassification">
+
+
+			<p>The classifications of hair types uses an alpha-numeric system ranging from letters A through C and numbers 1 through 4. These hair types differ in width and diameter of curls, waves, or coil pattern. The Andre Walker Hair Typing System is the most widely used to classify hair. </p>
+
+
+			 
+			<h3>Type 1</h3>
+			<img src="type1.png">
+			<p>
+				
+			Type 1 is straight hair. This type of hair is generally the most damage resistent and usually the most difficult to curl this hair texture. Due to the sebum easily spreading across the hair, it is usually the oilliest hair texture.</p>
+
+
+			<h3>Type 2</h3>
+			<img src="type2.png">
+			<p> 
+			Type 2 is wavy hair, whose texture and sheen range somewhere between straight and curly hair. Wavy hair is also more likely to become frizzy than straight hair. While type A waves can easily alternate between straight and curly styles, type B and C Wavy hair is resistant to styling. </p>
+
+			<h3>Type 3</h3>
+			<img src="type3.png">
+			<p> 
+			Type 3 is curly hair known to have an S-shape. The curl pattern may resemble a lowercase “s”, uppercase “S”, or sometimes an uppercase “Z” or lowercase “z”. This hair type is usually voluminous, “climate dependent (humidity = frizz), and damage prone.” Lack of proper care causes less defined curls. </p>
+
+			<h3>Type 4</h3>
+			<img src="type4.png">
+			<p> 
+			Type 4 is kinky hair, which features a tightly coiled curl pattern (or no discernible curl pattern at all) that is often fragile with a very high density. This type of hair shrinks when wet and because it has fewer cuticle layers than other hair types it is more susceptible to damage.</p>
+			
+			</div>
+
+			<div id="widthAndDensity">
+				<h3>Width and Density of Hair</h3>
+				<img src="hairThickness.jpg">
+				<p>
+               
+				Knowing the thickness of your hair will help you to better identify the type of products you should be using. Thich coarse hair (which is more frizz-prone) will need more hydration. So, products that offer deep moisturisation would help those with this particular hair type. Fine hair, on the other hand, tend to need less moisture because it can lead to more oil build up, so a clarifying shampoo might be more useful.</p>
+				<img src="hairDensity.jpg">
+				<p>
+					Density refers to the thickness or volume of your hair. Hair density can be high low or medium. Observe if you are able to see your scalp through the strands. If you can easily do so, you have low density hair. If you can see partly or no part of your scalp at all, you have medium and high density hair respectively. Another method is to hold your hair in a ponytail. Then measure the circumference of the pony tail using a string. Low density hair will be less than two inches, medium density will measure between two to three inches, and high density will be at least four inches.
+
+
+				</p>
+
+			</div>
+			
+
+
+		</div>
+</div>
+
+		
+
+
+
+
+
+			<!--<section class="section 1"></section>
+			<section class="section 2"></section>-->
+	</div>
+
+	<!--
+	<footer>
+		<section class="section 1"></section>
+		<section class="section 2"></section>
+	</footer>
+-->
+</body>
+
+
+
+
+
+
+
+<!--
+
+
+<style>
+		body {
+			background-color: #B19BD9;
+
+		}
+		 p {
+        font-family: georgia, serif; 
+        font-size: 18;
+    	}
+
+
+</style>
+
+
+
+ <header>
+		<div class = "row">
+			<nav>
+			<ul class= "main-nav">
+				<li><a href = "../index.html"> HOME </a></li>
+				<li><a href = "../personal/index.html"> ABOUT ME </a></li>
+				<li><a href = "../interests/index.html"> HOUSE OF CURLS
+				<li><a href = "../cause/index.html"> PURPOSE </a></li>
+			</ul>
+			</nav>
+			
+		</div>
+	</header> -> 
+
+
+	

@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ <title> House of Curls </title>
+ 
+	<!-- Media query for narrow browser width -->
+<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+<!-- Media query for medium browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+<!-- Media query for full browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+
+<!-- Prevent smartphones from scaling pages down -->
+<meta name="viewport" content="initial-scale=1">
+	
+	
+<style>
+body {
+  background-color: #ffcccc;
+	font-family: Copperplate,serif; 
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffcccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-top: 10px;
+
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+ </head>
+<body>
+	<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="porosity.html">Porosity</a>
+  <a href="hairhacks.html">Hair Hacks</a>
+  <a href="productReview.html">Products</a>
+  <a href="resources.html">Resources</a>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+	<div id = "wrap">
+
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+
+  
+  
+	
+ </head>
+<body>
+	<div id = "wrap">
+		
+		<div id="hairHacks" style = "background-color: #ffcccc;">
+			
+			
+			<div id="hacks">
+        <h1>Hair Hacks</h1>
+        <img src="hairhacks.png" style=" width: 40%;">
+				<p>Curly hair requires special care in order to look defined and healthy—but caring for your curls isn’t as demanding as you may think. If the thought of an extensive hair care routine intimidates you, I have good news: I know 4 easy beauty hacks for keeping your spirals hydrated and healthy. </p>
+
+			<h2>Hack #1</h2>
+			<p>The ultimate solution to moisturized and defined curls starts in the shower. While washing your hair, make sure to use a moisturizing shampoo and conditioner. For those with tighter curls, spend extra time combing your hair with a wide tooth comb while there is conditioner in it.</p>
+			
+				<h2>Hack #2</h2>
+			<p>Although most of us don't think twice about the type of towel we use, cotten towels can cause frizz by causing friction against the hair cuticles. Using a microfiber towel will bring you one step closer to frizz-free hair!</p>
+
+
+				<h2>Hack #3</h2>
+			<p>Much like a cotten towel, cotten bed pillowcases may not be gentle enough for your hair. A smooth, satin or silk pillowcase will not only feel super luxurious, but will also take it easy on your mane. </p>
+
+
+				<h2>Hack #4</h2>
+			<p>Blow dryers can expose hair to intense, direct heat which in turn causes curls to be frizzy and lose their natural shape upon drying. With a diffuser, heat is distributed more evenly, helping to prevent this frizz and enhance your individual curl pattern. Before drying, don’t forget to apply product to protect your hair from the heat.</p>
+
+
+
+			</div>
+			
+</div>
+			
+		</div>
+	</body>

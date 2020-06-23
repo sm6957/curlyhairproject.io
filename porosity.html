@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ <title> House of Curls </title>
+
+	<!-- Media query for narrow browser width -->
+<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+<!-- Media query for medium browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+<!-- Media query for full browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+
+<!-- Prevent smartphones from scaling pages down -->
+<meta name="viewport" content="initial-scale=1">
+	
+	
+<style>
+body {
+		background-color: #ffcccc;
+
+	font-family: Copperplate,serif; 
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffcccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-top: 10px;
+
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+ </head>
+<body style="background: #ffcccc;">
+	<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="porosity.html">Porosity</a>
+  <a href="hairhacks.html">Hair Hacks</a>
+  <a href="productReview.html">Products</a>
+  <a href="resources.html">Resources</a>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+	<div id = "wrap">
+
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+
+  
+  
+	
+ </head>
+<body>
+	<div id = "wrap">
+		<!--<div id = "banner"> </div>
+		<nav>
+			<ul>
+				<div class = "left">
+					<li>House of Curls</li>
+				</div>
+
+				<div class="right">
+					<li><a href = "index.html"> Home</a></li>
+					<li><a href = "porosity.html"> Porosity</a></li>
+					<li><a href = "productReview.html">Product Review</a></li>
+					<li><a href = "hairhacks.html">Product Review</a></li>
+
+				</div>
+				
+			</ul>
+
+		</nav>
+-->
+		<div id="hairPorosity">
+			<h1>Hair Porosity</h1>
+			<img src="hair_porosity_type.jpg">
+			<div class="clear"></div>
+
+			<p>Hair porosity refers to how well your hair can absorb and hold moisture. This is affected by the outer layer of the hair called the cuticle, which determines how easily moisture and oiks pass in and out of the hair. Hair porosity is effected by things such as heat treatments and chemical processing. Knowing your hair's porosity can help you choose the right products to keep your hair well-moisturized and happy! </p>
+			
+			<div id="quiz">
+			<h2>Determining Hair Porosity</h2>
+			
+			
+			<a href="https://www.curlsbot.com/porosity/">
+				<img src="quiz.png">
+			<div class="clear"></div>
+			</a>
+			
+			<p class="takeQuizLink"><a href = "https://www.curlsbot.com/porosity/"> Take the quiz!</a></p>
+			</div>
+
+			<div id="floatTest">
+				<h2>Float Test</h2>
+			<img src="porosity.jpg">
+			<div class="clear"></div>
+
+			<p>Take a few strands of hair from a comb or brush and drop it in a cup of water. Let the strand of hair sit for 2-4 minutes, If your hair floats, you have low porosity. If it sinks, you have high porosity </p>
+			</div>
+			
+			<div id="slip">
+				<h2>Slip 'n' Slide Test</h2>
+			<p>Take a strand of hair and slide your fingers from the tip of your hair to the root. If you feel little bumps along the way, this means your cuticles are lifted and that you have high porosity. If your fingers slip smoothly then you have low porosity hair.</p>
+
+			</div>
+
+			
+		</div>
